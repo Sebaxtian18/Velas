@@ -7,10 +7,14 @@
     <title>Velas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tailwind.config.js">
+    <style>
+        ('@tailwindcss/aspect-ratio')
+    </style>
 </head>
 
 <body>
-    <div class="overflow-hidden bg-gray-900" style="height: 100vh; width: 100vw;">
+    <div class="overflow-hidden bg-gray-900" style="height: 60px; width: 100vw;">
         <div class="bg-gray-900">
             <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
                 <div class="relative flex items-center justify-between">
@@ -84,13 +88,13 @@
                                 </div>
                                 <nav>
                                     <ul class="space-y-4">
-                                        <li><a href="/" aria-label="Our product" title="Our product"
+                                        <li><a href="index.html" aria-label="Our product" title="Our product"
                                                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Inicio</a>
                                         </li>
-                                        <li><a href="/" aria-label="Our product" title="Our product"
+                                        <li><a href="nosotros.html" aria-label="Our product" title="Our product"
                                                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Nosotros</a>
                                         </li>
-                                        <li><a href="/" aria-label="Product pricing" title="Product pricing"
+                                        <li><a href="productos.html" aria-label="Product pricing" title="Product pricing"
                                                 class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Productos</a>
                                         </li>
                                         <li><a href="/" aria-label="About us" title="About us"
@@ -105,69 +109,74 @@
                                 </nav>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-        <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div class="flex flex-col items-center justify-between xl:flex-row">
-                <div class="w-full max-w-xl mb-12 xl:pr-16 xl:mb-0 xl:w-7/12">
-                    <h2
-                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                        Velas Amour. <br class="hidden md:block" />
-                        Realsa tu magia <span class="text-teal-accent-400">y espiritu.</span>
-                    </h2>
-                    <p class="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan,
-                        totam rem aperiam, eaque ipsa quae.
-                    </p>
-                    <a href="/" aria-label=""
-                        class="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700">
-                        Conocer mas
-                        <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-                            <path
-                                d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
-                            </path>
-                        </svg>
-                    </a>
+    </div> 
+    <div class="bg-gray-900">
+        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+          <h2 class="sr-only">Products</h2>
+      
+          <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+            <a href="#" class="group">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <h3 class="mt-4 text-sm text-gray-500 ">Earthen Bottle</h3>
+              <p class="mt-1 text-lg font-medium text-gray-400">$48</p>
+            </a>
+            <a href="#" class="group">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <h3 class="mt-4 text-sm text-gray-500">Nomad Tumbler</h3>
+              <p class="mt-1 text-lg font-medium text-gray-400">$35</p>
+            </a>
+            <a href="#" class="group">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <h3 class="mt-4 text-sm text-gray-500">Focus Paper Refill</h3>
+              <p class="mt-1 text-lg font-medium text-gray-400">$89</p>
+            </a>
+            <a href="#" class="group">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+              <h3 class="mt-4 text-sm text-gray-500">Machined Mechanical Pencil</h3>
+              <p class="mt-1 text-lg font-medium text-gray-400">$35</p>
+            </a>
+            <a href="#" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
                 </div>
-                <div class="w-full max-w-xl xl:px-1 xl:w-5/12">
-                    <div class="relative">
-                        <svg viewBox="0 0 52 24" fill="currentColor"
-                            class="absolute bottom-0 right-0 z-0 hidden w-32 -mb-8 -mr-20 text-teal-accent-400 lg:w-32 lg:-mr-16 sm:block">
-                            <defs>
-                                <pattern id="766323e1-e594-4ffd-a688-e7275079d540" x="0" y="0" width=".135"
-                                    height=".30">
-                                    <circle cx="1" cy="1" r=".7"></circle>
-                                </pattern>
-                            </defs>
-                            <rect fill="url(#766323e1-e594-4ffd-a688-e7275079d540)" width="52" height="24"></rect>
-                        </svg>
-                        <div class="relative bg-white rounded shadow-2xl p-7 sm:p-10">
-                           <img src="./velas.webp" alt="">
-                        </div>
-                    </div>
+                <h3 class="mt-4 text-sm text-gray-500">Machined Mechanical Pencil</h3>
+                <p class="mt-1 text-lg font-medium text-gray-400">$35</p>
+              </a>
+              <a href="#" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
                 </div>
-            </div>
+                <h3 class="mt-4 text-sm text-gray-500">Machined Mechanical Pencil</h3>
+                <p class="mt-1 text-lg font-medium text-gray-400">$35</p>
+              </a>
+              <a href="#" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-500">Machined Mechanical Pencil</h3>
+                <p class="mt-1 text-lg font-medium text-gray-400">$35</p>
+              </a>
+              <a href="#" class="group">
+                <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                  <img src="https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+                </div>
+                <h3 class="mt-4 text-sm text-gray-500">Machined Mechanical Pencil</h3>
+                <p class="mt-1 text-lg font-medium text-gray-400">$35</p>
+              </a>
+            <!-- More products... -->
+          </div>
         </div>
-    </div>
-    <div class=" mt-10p-20 bg-gray-900 px-20" style=" width: 100vw;">
-        <h3 class="font-sans text-2xl font-bold">Bienvenido a Velas Amour</h3>
-        <p class=" text-base text-gray-400 md:text-lg">En velas Amour, nos apasiona iluminar tus momentos especiales con nuestras exclusivas velas diseñadas para cada ocasión. Desde románticas cenas a la luz de las velas hasta celebraciones festivas, nuestro emprendimiento se especializa en ofrecer una amplia gama de velas que se adaptan a todos los gustos y eventos. 
-            creemos en la calidad sin compromisos. Todas nuestras velas están hechas con ceras de la más alta calidad, garantizando una combustión limpia y duradera. Además, trabajamos con esmero en la selección de fragancias que no solo embellecen tu espacio, sino que también crean experiencias sensoriales únicas.
-        </p>
-        <h3 class="mt-10 font-sans text-2xl font-bold">Variedad para Todas las Ocasiones</h3>
-        <p class=" text-base text-gray-400 md:text-lg">Ya sea que estés buscando la suavidad de las velas aromáticas para relajarte después de un día agotador o necesites velas decorativas para una celebración especial, tenemos la solución perfecta. Explora nuestra colección de velas aromáticas, decorativas, votivas, y muchas más. Además, ofrecemos opciones personalizadas para eventos especiales, asegurándonos de que tus velas sean tan únicas como la ocasión que celebras.</p>
-        <h3 class="mt-10 font-sans text-2xl font-bold">Sostenibilidad en Cada Llama</h3>
-        <p class=" text-base text-gray-400 md:text-lg">Nos enorgullece ser una marca comprometida con la sostenibilidad. Utilizamos envases reciclables y nos esforzamos por minimizar nuestro impacto ambiental. Además, muchas de nuestras velas son hechas a mano por artesanos locales, apoyando a comunidades creativas y fomentando la artesanía.</p>
-        <h3 class="mt-10 font-sans text-2xl font-bold">Descubre la Magia de Velas Amour</h3>
-        <p class=" text-base text-gray-400 md:text-lg">En Velas Amour, no solo vendemos velas; ofrecemos la oportunidad de crear momentos inolvidables. Cada una de nuestras velas cuenta una historia única, tejida con esencias que despiertan emociones y colores que iluminan tus recuerdos. Nos esforzamos por ser más que una marca: somos tus cómplices en la construcción de experiencias memorables.
-            En nuestro taller, el arte de la iluminación es algo más que la mezcla de ceras y fragancias. Es una expresión creativa que se funde con la pasión por transformar cualquier espacio en un santuario de calidez y tranquilidad. Cada vela que creamos es un testimonio de esta dedicación, una pieza de arte efímero destinada a resaltar los momentos más especiales de tu vida.
-            En Velas Amour, entendemos que cada ocasión es única, y tu elección de vela debería reflejarlo. Ofrecemos servicios de personalización que te permiten diseñar velas a medida para eventos especiales como bodas, cumpleaños o simplemente para regalar un toque personal a tu hogar. Trabajamos estrechamente contigo para garantizar que cada vela sea una extensión de tus emociones y celebraciones.
-            Descubre la magia de Velas Amour y permítenos iluminar tu vida, evento tras evento, con la luz cálida y encantadora de nuestras velas. Tu historia merece ser contada con cada llama que enciendas.
-        </p>
-    </div>
-</body>
-
-</html>
+      </div>
+</body>    
